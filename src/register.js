@@ -1,7 +1,14 @@
-const register = async () => {
-    return null
+const nameUser = () => {
+    return 'victor';
 }
 
-const name = async () => {
-    return 'victor'
+const lastname =  () => {
+    return 'flores';
 }
+
+const register = () => {
+    const fullname = nameUser() + lastname();
+    return fullname
+}
+
+console.log(register);
